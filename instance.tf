@@ -1,8 +1,6 @@
 variable "access_key" {
-  default = "AKIAIQI7VZMQR42TJSMA"
 }
 variable "secret_key" {
-  default = "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"
 }
 data "aws_s3_bucket_object" "secret_key" {
   bucket = "lenon-jar"
