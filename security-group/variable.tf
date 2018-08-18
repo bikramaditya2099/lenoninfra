@@ -1,0 +1,4 @@
+
+variable "sgname" {}
+
+variable "sgdescription" {}
