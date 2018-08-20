@@ -12,14 +12,6 @@ resource "aws_security_group_rule" "rule1" {
   type              = "ingress"
 }
 
-resource "aws_security_group_rule" "rule2" {
-  security_group_id = "${module.security-group.security-group-id}"
-  from_port         = 8080
-  to_port           = 8080
-  protocol          = "tcp"
-  cidr_blocks       = ["0.0.0.0/0"]
-  type              = "ingress"
-}
 resource "aws_security_group_rule" "rule3" {
   security_group_id = "${module.security-group.security-group-id}"
   from_port         = 8090
